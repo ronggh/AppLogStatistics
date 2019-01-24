@@ -34,6 +34,7 @@ public class FormatTimeUDF extends UDF {
         Date d = new Date();
         d.setTime(ms);
 
+
         //周内第一天
         Date firstDay = DateUtil.getWeekBeginTime(d) ;
         SimpleDateFormat sdf = new SimpleDateFormat(fmt) ;
